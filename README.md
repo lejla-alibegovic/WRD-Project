@@ -1,1 +1,2 @@
-# WRD-Project
+
+#Web design and development - seminar project 
