@@ -1,2 +1,1 @@
-
-#Web design and development - seminar project 
+## Web design and development - seminar project 
