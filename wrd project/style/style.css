@@ -1,0 +1,366 @@
+/* Colors 
+
+Prussian Blue: #1D3557
+Celadon Blue:  #457B9D
+Powder Blue:   #A8DADC
+Honeydew:      #F1FAEE
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Roboto' sans-serif;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #F1FAEE;
+}
+
+/*----------------------
+          Header
+-----------------------*/
+.main-nav{
+    height: 10vh;   
+}
+.header-image{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+.header-image img{
+    object-fit: cover;
+    width: 100vw;
+    height: 90vh;
+}
+
+.header-image::after{
+    content: "";
+    position: absolute;
+    top:10%;
+    left:0;
+    width: 100%;
+    height: 90vh;
+    background-color: #457B9D;
+    opacity: .7;
+}
+.main-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu a{
+    margin: 0 45px;
+    color:#1D3557;
+    font-size: 20px;;
+}
+.nav-menu li::after{
+    content:"";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color:#d62828;
+    transition: all .3s ease;
+    margin-top:7px;
+}
+.nav-menu li:hover::after{
+    width: 100%;
+}
+.nav-menu li{
+    margin-top: 25px;
+}
+.centered-elements{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+}
+.centered-elements h2{
+    color:#F1FAEE;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 300;
+}
+.centered-elements h4{
+    color:#F1FAEE;
+    font-size: 20px; 
+    font-weight: 300;
+}
+#arrow-down{
+    position: absolute;
+    left: 50%;
+    bottom:40px;
+    width: 26px;
+    height: 26px;
+    margin-left: -13px;
+    z-index: 9999;
+    border:solid #F1FAEE;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    animation: myArrow 2s infinite;
+}
+@keyframes myArrow{
+    0%{
+        bottom: 40px;
+    }
+    30%{
+        bottom: 25px;
+        border-color: #A8DADC;
+    }
+    100%{
+        bottom: 40px;
+    }
+}
+/*----------------------
+        About Konjic
+-----------------------*/
+.about{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+.about img{
+    max-width: 500px;
+    padding: 20px;
+}
+.about-container{
+    margin:0 60px;
+}
+.about-container h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+    color:#1D3557;
+    display: block;
+}
+.about-container p{
+    line-height: 1.7;
+    width: 80%;
+    font-family: sans-serif;
+}
+
+
+/*----------------------
+          Quote
+-----------------------*/
+.quote-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:80px;
+    background: 
+    url(../img/q.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.quote-section p{
+padding: 100px 0;
+color:#1D3557;
+font-size: 35px;
+font-style: italic;
+font-weight: 700;
+}
+
+
+/*----------------------
+        Activities
+-----------------------*/
+.activity{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 120px 0;
+    flex-wrap: wrap;
+}
+.activities-container{
+    width: 21%;
+    background-color:#1D3557 ;
+}
+.image-container{
+    width: 100%;
+}
+.image-container img{
+    width: 100%;
+}
+.activities-container h3{
+    margin: 20px 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color:#F1FAEE;
+  
+}
+.activities-container p{
+    font-family:sans-serif;
+    margin: 7px 4px;
+    color:#F1FAEE;
+}
+
+/*----------------------
+        Gallery
+-----------------------*/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 120px;
+}
+.gallery div{
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #457B9D;
+    flex: 1 0 25%;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    transition: all .5s ease;
+
+}
+.gallery img:hover{
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/*----------------------
+        Offer
+-----------------------*/
+.offer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1D3557;
+    padding: 80px 0;
+}
+.offer-container{
+    width: 50%;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+}
+.form-item label{
+    font-size: 15px;
+    color: #F1FAEE;
+    margin-bottom: 3px;
+    
+}
+.form-item input,
+.form-item .form-control{
+    height: 30px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form-item span{
+    background-color: #A8DADC;
+    font-size: 18px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 6px 70px;
+    color: #1D3557;
+    font-weight: 700;
+    text-align: center;
+}
+.cost-lable{
+    margin-top: 30px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+}
+.form-item button{
+    background-color: #A8DADC;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 6px 70px;
+    color: #1D3557;
+    font-weight: 700;
+    text-align: center;
+
+} 
+
+
+/*----------------------
+        Contact
+-----------------------*/
+.contact{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 120px 0;
+    flex-wrap: wrap;
+}
+
+.contact-container{
+    width: 29%;
+}
+.contact-info{
+   
+   margin-left: 60px; 
+   margin-bottom: 60px;
+   display: flex;
+   flex-direction: row;
+}
+.contact h2{
+    margin: 30px 0 25px 60px;   
+    font-size: 35px;
+    color:#1D3557;
+
+}
+.contact-info p{
+    font-size: 20px;
+    color: #1D3557;
+}
+i{
+    font-family: 'FontAwesome';
+}
+.fas,
+.far{
+    margin-top:10px;
+    padding-right: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #1D3557;
+}
+
+/*----------------------
+          Footer
+-----------------------*/
+footer{
+    background-color: #1D3557;
+    color:#F1FAEE;
+}
+footer p{
+    font-size: 17px;
+    text-align: center;
+    padding:10px;
+}
+

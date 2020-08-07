@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./external/jquery/jquery.js"></script> 
+    <script src="./jquery-validation-1.16.0/dist/jquery.validate.js"></script> 
+    <title>WRD Project</title>
+</head>
+
+<body>
+ 
+    <header class="container">
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div>
+            <nav class="main-nav container">
+                <div class="main-nav-container">
+                    <ul class="nav-menu">
+                        <a href="#about"><li>About</li></a>
+                        <a href="#activities"><li>Activities</li></a>
+                        <a href="#gallery"><li>Gallery</li></a>
+                        <a href="#offer"><li>Offer</li></a>
+                        <a href="#contact"><li>Contact</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="centered-elements">
+            <h2>Explore Konjic</h2>
+            <h4>A town of stunning nature and places that will make your ideal holiday happen</h4>
+        </div>
+         <div class="header-image">
+             <img src="./img/3.jpg" alt="header image"> 
+        </div> 
+        <a href="#about">
+            <div id="arrow-down"></div>
+        </a>
+    </header>
+    <section id="about" class="about container">
+        <div class="about-container">
+            <h2>About Konjic</h2>
+            <p>
+                Konjic is a town and center of similar commune on extreme north mountainous Herzegovina, at the central part of B&H.
+                Agricultural and forestry land, huge water potential, great reserves of mineral of pirofilit are the main titles of huge richness of this part of BiH. <br><br>Konjic is attractive far more by its abundance of natural beauty that completely surrounds the town.
+                The town is one of the oldest permanent settlements in Bosnia and Herzegovina, dating back almost 4000 years; the city in its current incarnation arising as an important town in the late 14th century.
+            </p>
+        </div>
+        <img src="./img/1.jpg" alt="Konjic">
+    </section>
+
+    <section class="quote-section container">
+        <p>"A place where Herzegovina merges with Bosnia"</p>
+    </section >
+
+    <section class="activity container" id="activities">
+        <div class="activities-container">
+            <div class="image-container">
+                <img src="./img/raft.jpg" alt="rafting">
+            </div>
+            <h3>Rafting</h3>
+            <p>
+                Rafting is a very adventurous activity and one of the most popular forms
+                of active relaxation in Konjic, that opens the challenges of whitewater to both beginners
+                and experienced rafters. 
+            </p>
+        </div>
+        <div class="activities-container">
+            <div class="image-container">
+                <img src="./img/hiiking.jpg" alt="hiking">
+            </div>
+            <h3>Hiking</h3>
+            <p>
+                Step out into the fresh mountain air at the most beautiful viewpoints.
+                Prenj, Visočica, Čvrsnica, Lukomir are just a few places whose magnificent views you will enjoy during the hike.
+            </p>
+        </div>
+        <div class="activities-container">
+            <div class="image-container">
+                <img src="./img/mtb.jpg" alt="mtb">
+            </div>
+            <h3>Mountain biking</h3>
+            <p>
+                Enjoy MTB adventures in mountain areas, where you will be amazed with untouched nature while going off the beathen
+                paths with beautiful views on the valleys and the surroundings.
+            </p>
+        </div>
+        <div class="activities-container">
+            <div class="image-container">
+                <img src="./img/cul.jpg" alt="culture">
+             </div>
+            <h3>Culture</h3>
+            <p>
+                Ciy tour includes visits to cultural and historical heritage sites of Konjic – Old Stone bridge, woodcarving
+                museums, tombstones, Heritage museum, Tito's bunker and more beautiful places in Konjic.   
+            </p>
+        </div>
+    </section>
+    
+    <section class="gallery container" id="gallery">
+        <div><img src="./img/buk.jpg" alt="Dzajica buk"></div>
+        <div><img src="./img/nera.jpg" alt="Neretva"></div>
+        <div><img src="./img/zuko.jpg" alt="Zuko"></div>
+        <div><img src="./img/neretva.jpg" alt="Neretva"></div>
+        <div><img src="./img/visocica.jpg" alt="Visočica"></div>
+        <div><img src="./img/2.jpg" alt="Cuprija"></div>
+        <div><img src="./img/boracko.jpg" alt="Boracko jezero"></div>
+        <div><img src="./img/jablanicko.jpg" alt="Jablanicko jezero"></div>
+
+    </section>
+
+    <section class="offer container" id="offer">
+       <div class="offer-container">
+           <form id="form">
+               <div class="form-item">
+                    <label for="name">Your name</label>
+                    <input required type="text" name="name" id="name" placeholder="e.g. Jane Doe">
+                    <label for="email">Your email</label>
+                    <input required type="email" name="email" id="email" placeholder="e.g. jane.doe@gmail.com">
+                    <label for="telephone">Your telephone number</label>
+                    <input required type="text" name="telephone" id="telephone" placeholder="e.g. +387-62-111-222">
+                </div>
+                <div class="form-item">
+                    <label>Choose activity</label>
+                    <select class="form-control" id="activity-type" onchange="finalCost()"> 
+                        <option value="0" selected>Choose activitiy</option>
+                        <option value="55">Rafting - 55 BAM per person</option>
+                        <option value="67">MTB - 67 BAM per person</option>
+                        <option value="20">City tour - 20 BAM per person</option>
+                        <option value="70">Hiking - 70 BAM per person</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label>Number of persons</label>
+                    <select class="form-control" id="person_number" onchange="finalCost()">
+                        <option value="0"> 0 </option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                        <option value="8"> 8 </option>
+                        <option value="9"> 9 </option>
+                        <option value="10"> 10 </option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label class="cost-lable">Total Cost (BAM) : </label>
+                    <span id="result" >0</span>
+                </div>
+                <div class="form-item">
+                    <button id="btn" onclick="isValid()">Submit</button>
+                </div>
+           </form>
+       </div> 
+    </section>
+
+    <section class="contact container" id="contact">
+        
+        <div class="contact-container">
+            <h2>Contact us</h2>
+            <div class="contact-info">
+                <i class="fas fa-phone"></i>
+                <p>
+                    +387-62-111-222<br>
+                    +387-63-222-333
+                </p>
+            </div>
+            <div class="contact-info">
+                <i class="far fa-envelope"></i>
+                <p>
+                    support@support.ba<br>
+                    marketing@marketing.ba
+                </p>
+            </div>
+            <div class="contact-info">
+                <i class="fas fa-map-pin"></i>
+                <p>
+                    Maršala Tita<br>
+                    88400<br>
+                    Konjic  
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+      
+        <p>&COPY;Lejla Alibegović 2020</p>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
