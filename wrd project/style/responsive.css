@@ -1,0 +1,80 @@
+
+ @media all and (max-width:1276px){
+    .centered-elements h4{
+        font-size: 18px;
+    } 
+} 
+@media all and (max-width:1200px){
+   /*everything acceptable*/
+    
+} 
+
+@media all and (max-width:991px){
+    .centered-elements h4{
+    font-size: 14px;
+    font-weight: bold;
+    }
+    .centered-elements h2{
+        font-size: 45px;
+    }
+    .activities-container p{
+        margin: 10px;
+    }
+    .activities-container h3{
+        margin:10px;
+    }
+    footer p{
+        padding: 15px;
+    }
+}
+@media all and (max-width:768px){
+    .nav-menu a{
+        font-size: 15px;
+    }
+    .centered-elements h4{
+        font-size: 10px;
+    }
+    .centered-elements h2{
+        font-size: 35px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-container h2{
+        font-size: 30px;
+       margin-left: 60px;
+       margin-top: 10px;
+    }
+    .about-container p{
+        margin: 0 auto 20px auto;
+        text-align: justify;
+    }
+    .quote-section p{
+        font-size: 30px;
+    }
+    .activities-container{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    .gallery div{
+        flex: 1 0 50%;
+    }
+}
+@media all and (max-width:480px){
+    .centered-elements h4{
+        display: none;
+    }
+    .quote-section p{
+        display: none;
+    }
+    .activities-container{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .gallery div{
+        flex: 1 0 100%;
+    }
+}
+@media all and (max-width:320px){
+
+}
