@@ -8,7 +8,12 @@
    /*everything acceptable*/
     
 } 
-
+@media all and (max-width:1025px){
+    .centered-elements h4{
+        font-size: 14px;
+        font-weight: bold;
+    }
+ } 
 @media all and (max-width:991px){
     .centered-elements h4{
     font-size: 14px;
@@ -41,7 +46,7 @@
         flex-direction: column;
     }
     .about-container h2{
-        font-size: 30px;
+       font-size: 30px;
        margin-left: 60px;
        margin-top: 10px;
     }
@@ -64,6 +69,14 @@
     .centered-elements h4{
         display: none;
     }
+    .about-container h2{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-container p{
+        width: 95%;
+    }
     .quote-section p{
         display: none;
     }
@@ -71,10 +84,37 @@
         width: 80%;
         margin-bottom: 30px;
     }
+    .activities-container p{
+        text-align: justify;
+        
+    }
     .gallery div{
         flex: 1 0 100%;
     }
-}
-@media all and (max-width:320px){
-
+    .offer{
+        padding: 45px auto;
+    }
+    .offer-container{
+        width: 80%;
+    }
+    .form-item label{
+        font-size: 20px;
+    }
+    .form-item input,
+    .form-item .form-control{
+        height: 35px;
+    }
+    .form-item button{
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    } 
+    .form-item span{
+        font-size: 20px; 
+    }
+   .about img{
+       max-width: 400px;
+       padding: 15px;
+   }
 }
