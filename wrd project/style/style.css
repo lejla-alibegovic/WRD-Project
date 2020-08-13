@@ -111,7 +111,7 @@ a{
     width: 26px;
     height: 26px;
     margin-left: -13px;
-    z-index: 9999;
+    z-index: 9997;
     border:solid #F1FAEE;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
@@ -137,7 +137,7 @@ a{
     width: 30px;
     height: 30px;
     position: absolute;
-    top:40px;
+    top:25px;
     right: 40px;
     cursor: pointer;
     z-index: 9999;
@@ -152,6 +152,9 @@ a{
     border-radius: 2px;
     left: 0;
     opacity: 1;
+    transform: rotate(0deg);
+    transition: all .25s ease-in-out;
+    display: none;
 }
 .open-button span:nth-child(1){
     top:0;
@@ -160,9 +163,24 @@ a{
 .open-button span:nth-child(2){
     top:10px;
     transform-origin: left center;
-}.open-button span:nth-child(3){
+}
+.open-button span:nth-child(3){
     top:20px;
     transform-origin: left center;
+}
+.open-button.open span:nth-child(1){
+    transform: rotate(45deg);
+    top:-3px;
+    left: 8px;
+}
+.open-button.open span:nth-child(2){
+    width: 0;
+    opacity: 0;
+}
+.open-button.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top:19px;
+    left: 8px;
 }
 /*----------------------
         About Konjic
@@ -189,6 +207,7 @@ a{
     line-height: 1.7;
     width: 80%;
     font-family: sans-serif;
+    text-align: justify;
 }
 
 
@@ -244,13 +263,13 @@ font-weight: 700;
     letter-spacing: 1px;
     font-weight: 300;
     color:#F1FAEE;
-  
+    margin-left: 10px;
 }
 .activities-container p{
     font-family:sans-serif;
-    margin: 7px 4px;
+    margin: 10px;
     color:#F1FAEE;
-    
+    text-align: justify;
 }
 
 /*----------------------
