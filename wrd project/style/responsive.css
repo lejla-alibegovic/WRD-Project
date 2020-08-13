@@ -37,10 +37,11 @@
         font-size: 15px;
     }
     .centered-elements h4{
-        font-size: 10px;
+        display: none;
     }
     .centered-elements h2{
         font-size: 35px;
+        text-align: center;
     }
     .about{
         flex-direction: column;
@@ -64,10 +65,35 @@
     .gallery div{
         flex: 1 0 50%;
     }
+    .nav-menu{
+        height: 100%;
+        width: 100%;
+        background-color: #F1FAEE;
+        position: fixed;
+        z-index: 9998;
+        top:0;
+        left:0;
+        display:none;
+    }
+    .open{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .open a{
+        font-size: 25px;
+    }
+    .open-button span{
+        display: block;
+    }
 }
 @media all and (max-width:480px){
     .centered-elements h4{
         display: none;
+    }
+    .centered-elements h2{
+        text-align: center;
     }
     .about-container h2{
         text-align: center;
@@ -117,4 +143,5 @@
        max-width: 400px;
        padding: 15px;
    }
+   
 }
