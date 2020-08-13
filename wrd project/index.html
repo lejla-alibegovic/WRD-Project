@@ -16,7 +16,7 @@
 <body>
  
     <header class="container">
-        <a href="#" class="open-button">
+        <a  class="open-button">
             <span></span>
             <span></span>
             <span></span>
@@ -130,8 +130,8 @@
                 </div>
                 <div class="form-item">
                     <label>Choose activity</label>
-                    <select class="form-control" id="activity-type" onchange="finalCost()"> 
-                        <option value="0" selected>Choose activitiy</option>
+                    <select  class="form-control" name="activity" id="activity-type" onchange="finalCost()"> 
+                        <option value="" >Choose activitiy</option>
                         <option value="55">Rafting - 55 BAM per person</option>
                         <option value="67">MTB - 67 BAM per person</option>
                         <option value="20">City tour - 20 BAM per person</option>
@@ -140,8 +140,8 @@
                 </div>
                 <div class="form-item">
                     <label>Number of persons</label>
-                    <select class="form-control" id="person_number" onchange="finalCost()">
-                        <option value="0"> 0 </option>
+                    <select  class="form-control" name="persons"id="person_number" onchange="finalCost()">
+                        <option value=""> 0 </option>
                         <option value="1"> 1 </option>
                         <option value="2"> 2 </option>
                         <option value="3"> 3 </option>
@@ -159,7 +159,7 @@
                     <span id="result" >0</span>
                 </div>
                 <div class="form-item">
-                    <button id="btn" onclick="isValid()">Submit</button>
+                    <button id="btn" onclick="Save()">Submit</button>
                 </div>
            </form>
        </div> 
